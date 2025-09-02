@@ -1,0 +1,20 @@
+{
+  "name": "cfwork-docker",
+  "compatibility_date": "2025-09-01",
+  "observability": {
+    "enabled": true
+  },
+  "dev": {
+    "ip": "0.0.0.0",
+    "port": 8787
+  },
+  "vars": {
+    "author": "xd88dx"
+  },
+  "kv_namespaces": [
+    {
+      "binding": "KV",
+      "id": "kv-data"
+    }
+  ]
+}
