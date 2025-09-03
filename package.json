@@ -2,10 +2,10 @@
   "name": "cfwork-docker",
   "version": "1.0.0",
   "scripts": {
-    "init": "wrangler dev ./index.js",
-    "start": "wrangler dev ./src/index.js --persist-to ./data"
+    "init": "wrangler dev ./index.js -c ./config/wrangler.jsonc",
+    "start": "wrangler dev ./src/index.js -c ./config/wrangler.jsonc --persist-to ./data"
   },
   "devDependencies": {
-    "wrangler": "^4.33.1"
+    "wrangler": "^4.33.2"
   }
 }

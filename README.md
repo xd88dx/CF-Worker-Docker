@@ -16,6 +16,7 @@ docker run --rm xd88dx/cfwork-docker
     -e TZ=Asia/Shanghai \
     -v ./cfdocker/src:/app/src \
     -v ./cfdocker/data:/app/data \
+    -v ./cfdocker/config:/app/config \
     xd88dx/cfwork-docker
   ```
 
@@ -33,6 +34,7 @@ docker run --rm xd88dx/cfwork-docker
       volumes:
         - ./cfdocker/src:/app/src
         - ./cfdocker/data:/app/data
+        - ./cfdocker/config:/app/config
   ```
 
 访问[http://127.0.0.1:8787](http://127.0.0.1:8787)即可
