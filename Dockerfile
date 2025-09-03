@@ -5,10 +5,10 @@ WORKDIR /app
 RUN apt-get update && apt-get install -y ca-certificates && rm -rf /var/lib/apt/lists/*
 
 COPY package.json package-lock.json ./
-RUN npm install && \
-  npm cache clean --force
+RUN npm install && npm cache clean --force
 
-COPY index.js config ./
+COPY index.js ./
+COPY config ./default
 
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
