@@ -1,7 +1,7 @@
 export default {
   async fetch(request, env, ctx) {
-    const currentYear = new Date().getFullYear()
-    const author = env.author || 'developer'
+    const currentYear = new Date().getFullYear();
+    const author = env.author || "developer";
 
     const html = `
       <!DOCTYPE html>
@@ -81,12 +81,12 @@ export default {
         </footer>
       </body>
       </html>
-    `
+    `;
 
     return new Response(html, {
       headers: {
-        'Content-Type': 'text/html;charset=UTF-8'
-      }
-    })
-  }
-}
+        "Content-Type": "text/html;charset=UTF-8",
+      },
+    });
+  },
+};
