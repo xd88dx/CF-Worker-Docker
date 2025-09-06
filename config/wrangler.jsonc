@@ -1,5 +1,5 @@
 {
-  "name": "cfwork-docker",
+  "name": "cf-worker-docker",
   "compatibility_date": "2025-09-01",
   "observability": {
     "enabled": true

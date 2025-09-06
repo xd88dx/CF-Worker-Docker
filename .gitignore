@@ -76,6 +76,9 @@ jspm_packages/
 # Snowpack dependency directory
 web_modules/
 
+# Python cache
+__pycache__
+
 # TypeScript cache
 *.tsbuildinfo
 

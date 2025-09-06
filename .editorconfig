@@ -14,3 +14,15 @@ end_of_line = crlf
 
 [*.txt]
 end_of_line = crlf
+
+[*.py]
+indent_size = unset
+
+[*.ui]
+indent_size = unset
+
+[*.xml]
+indent_size = unset
+
+[*.java]
+indent_size = unset

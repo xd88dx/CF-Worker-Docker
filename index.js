@@ -1,7 +1,7 @@
 export default {
   async fetch(request, env, ctx) {
-    const currentYear = new Date().getFullYear();
-    const author = env.author || "developer";
+    const currentYear = new Date().getFullYear()
+    const author = env.author || 'developer'
 
     const html = `
       <!DOCTYPE html>
@@ -61,7 +61,7 @@ export default {
             <p class="text-gray-700 mb-4 text-center">
               使用说明请访问我们的GitHub仓库
             </p>
-            <a href="https://github.com/xd88dx/cfwork-docker"
+            <a href="https://github.com/xd88dx/CF-Worker-Docker"
                target="_blank"
                class="flex items-center justify-center gap-2 bg-gray-800 hover:bg-gray-900 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300 mb-3 w-full">
               <i class="fa fa-github"></i>
@@ -81,12 +81,12 @@ export default {
         </footer>
       </body>
       </html>
-    `;
+    `
 
     return new Response(html, {
       headers: {
-        "Content-Type": "text/html;charset=UTF-8",
-      },
-    });
-  },
-};
+        'Content-Type': 'text/html;charset=UTF-8'
+      }
+    })
+  }
+}

@@ -1,4 +1,4 @@
-# cfwork-docker
+# cf-worker-docker
 
 ```shell
 docker run --rm xd88dx/cfwork-docker

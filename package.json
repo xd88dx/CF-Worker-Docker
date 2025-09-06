@@ -1,5 +1,5 @@
 {
-  "name": "cfwork-docker",
+  "name": "cf-worker-docker",
   "version": "1.0.0",
   "scripts": {
     "init": "wrangler dev ./index.js -c ./config/wrangler.jsonc",
